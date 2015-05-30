@@ -4,12 +4,20 @@ one:
   title: MyString
   year: 1
   genre: MyString
-  synopsis: MyText
+  rating: MyString
+  runtime: 1
+  synoposis: MyText
   price: 9.99
+  imdb_score: 9.99
+  imdb_link: MyString
 
 two:
   title: MyString
   year: 1
   genre: MyString
-  synopsis: MyText
+  rating: MyString
+  runtime: 1
+  synoposis: MyText
   price: 9.99
+  imdb_score: 9.99
+  imdb_link: MyString

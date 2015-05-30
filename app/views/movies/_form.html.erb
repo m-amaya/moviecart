@@ -24,12 +24,28 @@
     <%= f.text_field :genre %>
   </div>
   <div class="field">
-    <%= f.label :synopsis %><br>
-    <%= f.text_area :synopsis %>
+    <%= f.label :rating %><br>
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :runtime %><br>
+    <%= f.number_field :runtime %>
+  </div>
+  <div class="field">
+    <%= f.label :synoposis %><br>
+    <%= f.text_area :synoposis %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
     <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :imdb_score %><br>
+    <%= f.text_field :imdb_score %>
+  </div>
+  <div class="field">
+    <%= f.label :imdb_link %><br>
+    <%= f.text_field :imdb_link %>
   </div>
   <div class="actions">
     <%= f.submit %>
