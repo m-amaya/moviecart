@@ -4,11 +4,16 @@
   
 </div>
 
+<div class="sub-header">
+    <%= @movies.length %> total movies available.
+</div>
+
 <div class="content js-masonry" data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" }'>
   <% @movies.each do |movie| %>
   <div class="movie-div item">
+    <%= link_to 'X', movie, method: :delete, data: { confirm: 'Are you sure?' }, class: "delete" %>
     <div class="box center-block">
-      <%= image_tag(movie.image_url, class:'movie-poster') %>
+      <%= link_to image_tag(movie.image_url, class:'movie-poster'), movie %>
       <div class="overbox">
         <div class="title overtext">
           <h2>IMDB</h2>
@@ -33,3 +38,7 @@
   </div>
   <% end %>
 </div>
+
+<!--<div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>-->

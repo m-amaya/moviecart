@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui
  */
 
 * {
@@ -23,14 +24,66 @@ body {
     color: #E6E6E6;
 }
 
+.sub-header {
+    position: absolute;
+    top: 144px;
+    color: #1D1F21;
+    background-color: #C1C684;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #E6E6E6;
+    font-family: 'Roboto', sans-serif;
+    //3 movies
+    @media screen and (min-width: 592px) {
+        top: 112px;
+        font-size: 1.3rem;
+    }
+    //5 movies
+    @media screen and (min-width: 976px) {
+        top: 120px;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    background-color: #282A2D;
+    border-bottom: 1px solid #C1C684;
+    width: 100%;
+}
+
+.header h1 {
+    color: #C1C684;
+    font-family: 'Bevan', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 65%;
+    //3 movies
+    @media screen and (min-width: 592px) {
+        font-size: 3rem;
+        width: 80%;
+    }
+    //5 movies
+    @media screen and (min-width: 976px) {
+        font-size: 3.5rem;
+    }
+    display: block;
+    margin: 30px auto;
+}
+
 .content {
-    margin: 200px auto 0;
+    margin: 220px auto 0;
     width: 100%;
     padding: 0;
     //2 movies
     max-width: 384px;
     //3 movies
     @media screen and (min-width: 592px) {
+        margin-top: 200px;
         max-width: 576px;
     }
     //4 movies
@@ -59,27 +112,6 @@ body {
     }
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    background-color: #282A2D;
-    border-bottom: 1px solid #C1C684;
-    width: 100%;
-    /*border-bottom: 8px solid #A6A8A7;*/
-    /*border-bottom-left-radius: 20px;*/
-    /*border-bottom-right-radius: 20px;*/
-}
-
-.header h1 {
-    color: #C1C684;
-    font-family: 'Bevan', cursive;
-    font-size: 3rem;
-    font-weight: normal;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 3px;
-}
-
 .content {
     /*background: linear-gradient(#3C3F43, rgba(0,0,0,0));*/
     /*border-top: 3px solid #282A2D;*/
@@ -97,11 +129,4 @@ body {
         font-family: 'Roboto', sans-serif;
     }
 
-}
-
-@media (min-width: 850px) {
-    
-    .header h1 {
-        font-size: 3.5rem;
-    }
 }
