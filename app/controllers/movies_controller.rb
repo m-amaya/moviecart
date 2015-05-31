@@ -69,6 +69,6 @@ class MoviesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def movie_params
-      params.require(:movie).permit(:title, :year, :genre, :rating, :runtime, :synoposis, :price, :imdb_score, :imdb_link)
+      params.require(:movie).permit(:title, :year, :genre, :rating, :runtime, :synopsis, :price, :imdb_score, :imdb_link, :image_url)
     end
 end

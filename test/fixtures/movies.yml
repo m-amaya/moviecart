@@ -6,10 +6,11 @@ one:
   genre: MyString
   rating: MyString
   runtime: 1
-  synoposis: MyText
+  synopsis: MyText
   price: 9.99
   imdb_score: 9.99
   imdb_link: MyString
+  image_url: MyString
 
 two:
   title: MyString
@@ -17,7 +18,8 @@ two:
   genre: MyString
   rating: MyString
   runtime: 1
-  synoposis: MyText
+  synopsis: MyText
   price: 9.99
   imdb_score: 9.99
   imdb_link: MyString
+  image_url: MyString

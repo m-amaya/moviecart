@@ -4,12 +4,13 @@ class CreateMovies < ActiveRecord::Migration
       t.string :title
       t.integer :year, limit: 4
       t.string :genre
-      t.string :rating
+      t.string :rating, limit: 5
       t.integer :runtime, limit: 3
-      t.text :synoposis
-      t.decimal :price, precision: 8, scale: 2
+      t.text :synopsis
+      t.decimal :price, precision: 4, scale: 2
       t.decimal :imdb_score, precision: 3, scale: 1
       t.string :imdb_link
+      t.string :image_url
 
       t.timestamps null: false
     end

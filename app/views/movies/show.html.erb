@@ -26,8 +26,8 @@
 </p>
 
 <p>
-  <strong>Synoposis:</strong>
-  <%= @movie.synoposis %>
+  <strong>Synopsis:</strong>
+  <%= @movie.synopsis %>
 </p>
 
 <p>
@@ -43,6 +43,11 @@
 <p>
   <strong>Imdb link:</strong>
   <%= @movie.imdb_link %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @movie.image_url %>
 </p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
