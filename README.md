@@ -1,6 +1,7 @@
 # Movie Cart
 A simple shopping cart app for a basic database of movies.
 Built on Rails 4, hooked up to a mysql database.
+![alt tag](app/assets/images/screenshots/screenshot-database.png)
 
 ## Specs
 
