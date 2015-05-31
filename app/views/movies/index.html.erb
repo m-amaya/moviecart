@@ -1,45 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="header">
+  
+  <h1>Movie Database</h1>
+  
+</div>
 
-<h1>Listing Movies</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Year</th>
-      <th>Genre</th>
-      <th>Rating</th>
-      <th>Runtime</th>
-      <th>Synopsis</th>
-      <th>Price</th>
-      <th>Imdb score</th>
-      <th>Imdb link</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @movies.each do |movie| %>
-      <tr>
-        <td><%= movie.title %></td>
-        <td><%= movie.year %></td>
-        <td><%= movie.genre %></td>
-        <td><%= movie.rating %></td>
-        <td><%= movie.runtime %></td>
-        <td><%= movie.synopsis %></td>
-        <td><%= movie.price %></td>
-        <td><%= movie.imdb_score %></td>
-        <td><%= movie.imdb_link %></td>
-        <td><%= movie.image_url %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Movie', new_movie_path %>
+<div class="content">
+  <% @movies.each do |movie| %>
+  <div class="movie-div">
+    <div class="box center-block">
+      <%= image_tag(movie.image_url, class:'movie-poster') %>
+      <div class="overbox">
+        <div class="title overtext">
+          <h2>IMDB</h2>
+          <p><%= movie.imdb_score %>/10</p>
+        </div>
+        <div class="tagline overtext">
+          <p>$<%= movie.price %></p>
+        </div>
+      </div>
+    </div>
+    <h2><%= movie.title %> (<%= movie.year %>)</h2>
+    <div class="genre">
+      <p><%= movie.genre %></p>
+    </div>
+    <div class="left-block">
+      <div class="rating"><p><%= movie.rating %></p></div>
+    </div>
+    <div class="right-block">
+      <div class="runtime">
+        <p><%= movie.runtime %> min</p></div>
+    </div>
+  </div>
+  <% end %>
+</div>
