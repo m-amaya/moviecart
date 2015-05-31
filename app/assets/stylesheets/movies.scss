@@ -6,13 +6,10 @@
     
     background-color: #282A2D;
     width: 180px;
-    min-height: 400px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    float: left;
-    margin: 6px;
+    margin: 6px 6px;
+    padding: 30px 3px;
     
     .movie-poster {
         position: absolute;
@@ -63,7 +60,7 @@
     .genre {
         clear: left;
         text-align: center;
-        font-size: 1.15rem;
+        font-size: 1rem;
         margin-top: -5px;
     }
 
@@ -109,6 +106,7 @@
       opacity: 0;
       width: 150px;
       height: 230px;
+      border-top-left-radius: 10px;
       
       h2 {
         margin-top: 30%;
@@ -164,12 +162,12 @@
       
       p {
         font-size: 1.4em;
-        background-color: #E6E6E6;
-        color: #D26467;
+        background-color: #282A2D;
+        color: #BDA7C5;
         width: 60%;
         margin-left: 20%;
         padding: 10px 0;
-        border: 2px solid #282A2D;
+        border: 1px solid #fff;
         border-radius: 3px;
       }
     }

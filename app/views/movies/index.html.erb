@@ -4,9 +4,9 @@
   
 </div>
 
-<div class="content">
+<div class="content js-masonry" data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" }'>
   <% @movies.each do |movie| %>
-  <div class="movie-div">
+  <div class="movie-div item">
     <div class="box center-block">
       <%= image_tag(movie.image_url, class:'movie-poster') %>
       <div class="overbox">
